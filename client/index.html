@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolt Motors Voice Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏍️</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🏍️</div>
+                <h1>REVOLT</h1>
+                <span class="tagline">Voice Assistant</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="voice-interface">
+                <div class="status-indicator" id="statusIndicator">
+                    <div class="pulse-ring" id="pulseRing">
+                        <div class="inner-circle">
+                            <span class="status-icon" id="statusIcon">🎙️</span>
+                        </div>
+                    </div>
+                    <div class="status-text" id="statusText">Ready to start</div>
+                </div>
+
+                <div class="controls">
+                    <button id="startBtn" class="control-btn primary">
+                        <span class="btn-icon">🚀</span>
+                        <span class="btn-text">Start Conversation</span>
+                    </button>
+                    
+                    <button id="recordBtn" class="control-btn record" disabled>
+                        <span class="btn-icon">🎙️</span>
+                        <span class="btn-text">Hold to Speak</span>
+                    </button>
+                    
+                    <button id="interruptBtn" class="control-btn interrupt" disabled>
+                        <span class="btn-icon">✋</span>
+                        <span class="btn-text">Interrupt</span>
+                    </button>
+                </div>
+
+                <div class="conversation-log" id="conversationLog">
+                    <div class="welcome-message">
+                        <div class="message-content">
+                            <p>👋 Hi! I'm <strong>Rev</strong>, your Revolt Motors voice assistant.</p>
+                            <p>Press <strong>"Start Conversation"</strong> to begin, then <strong>hold "Hold to Speak"</strong> to talk with me about Revolt Motors and our amazing electric motorcycles!</p>
+                            <p>💡 <em>Try asking about: RV400 specs, pricing, dealerships, battery range, or anything about Revolt!</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="audio-visualizer" id="audioVisualizer">
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Revolt Motors. All rights reserved. | Made with ❤️ for sustainable mobility</p>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/audioRecorder.js"></script>
+    <script src="js/websocketClient.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
