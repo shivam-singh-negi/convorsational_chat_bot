@@ -8,7 +8,7 @@ A real-time conversational voice interface built with the Gemini Live API, repli
 - **Voice Interruption**: Interrupt the AI mid-response for dynamic conversations  
 - **Low Latency**: 1-2 second response times
 - **Server-to-Server Architecture**: Secure backend implementation
-- **Revolt Motors Focus**: AI assistant specialized in Revolt Motors information
+- **Motors Vehicle Focus**: AI assistant specialized in Motors Vehicle information
 - **Responsive Design**: Works on desktop and mobile devices
 
 ## 🚀 Quick Start
