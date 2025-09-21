@@ -1,4 +1,4 @@
-# Revolt Motors Voice Chatbot
+# AI Voice Chatbot
 
 A real-time conversational voice interface built with the Gemini Live API, replicating the functionality of the Revolt Motors chatbot with advanced features like voice interruption and low-latency responses.
 
@@ -99,7 +99,7 @@ geminiModel: 'gemini-2.5-flash-preview-native-audio-dialog'
 
 ### System Instructions
 
-The AI is configured with specific instructions to only discuss Revolt Motors topics. You can modify the system instructions in `server/config/config.js`:
+The AI is configured with specific instructions to only discuss  Motors vehicle topics. You can modify the system instructions in `server/config/config.js`:
 
 ```javascript
 systemInstructions: `You are Rev, the voice assistant for Revolt Motors...`
@@ -212,20 +212,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Google Gemini Live API for powerful voice capabilities
-- Revolt Motors for the inspiration and benchmark
 - Socket.IO for real-time communication
 - Web Audio API for audio processing
 
-## 📞 Support
-
-If you encounter issues:
-
-1. Check the troubleshooting section above
-2. Review browser console for errors
-3. Verify API key and quotas
-4. Create an issue in the repository
-
----
 
 **Demo Video Requirements:**
 - 30-60 seconds showing natural conversation
