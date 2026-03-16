@@ -1,6 +1,6 @@
 # AI Voice Chatbot
 
-A real-time conversational voice interface built with the Gemini Live API, replicating the functionality of the Revolt Motors chatbot with advanced features like voice interruption and low-latency responses.
+A real-time conversational voice interface built with the Gemini Live API with advanced features like voice interruption and low-latency responses.
 
 ## 🎯 Features
 
@@ -81,7 +81,7 @@ revolt-voice-chatbot/
 2. **Hold to Speak**: Press and hold "Hold to Speak" button while talking
 3. **Release to Send**: Release the button to send your audio to the AI
 4. **Interrupt Anytime**: Click "Interrupt" to stop the AI mid-response
-5. **Ask About Revolt**: The AI focuses on Revolt Motors topics - bikes, specs, pricing, etc.
+5. **Ask About Revolt**: The AI focuses on Motors topics - bikes, specs, pricing, etc.
 
 ## ⚙️ Configuration
 
@@ -102,7 +102,7 @@ geminiModel: 'gemini-2.5-flash-preview-native-audio-dialog'
 The AI is configured with specific instructions to only discuss  Motors vehicle topics. You can modify the system instructions in `server/config/config.js`:
 
 ```javascript
-systemInstructions: `You are Rev, the voice assistant for Revolt Motors...`
+systemInstructions: `You are Rev, the voice assistant for  Motors...`
 ```
 
 ## 🛠️ Development
@@ -197,17 +197,6 @@ CMD ["npm", "start"]
 - **Compression**: PCM to base64 encoding for transmission
 - **Connection Pooling**: WebSocket connections are reused
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
